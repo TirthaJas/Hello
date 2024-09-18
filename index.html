@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice-Controlled Car</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Voice-Controlled Bluetooth Car</h1>
+  <div class="container">
+    <button id="connectBtn">Connect to Car</button>
+    <div class="controls">
+      <button onclick="sendCommand('^')">Forward</button>
+      <button onclick="sendCommand('-')">Backward</button>
+      <button onclick="sendCommand('<')">Left</button>
+      <button onclick="sendCommand('>')">Right</button>
+      <button onclick="sendCommand('*')">Stop</button>
+    </div>
+    <button id="voiceBtn">Voice Control</button>
+    <p id="status">Status: Not connected</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
